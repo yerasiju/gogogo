@@ -26,7 +26,7 @@ const SignUp = () => {
       if (response.ok) {
         setMessage("Sign-up successful! You can now log in.");
         setFormData({ username: "", email: "", password: "" });
-        navigate("/gogogo/loginn");
+        navigate("/loginn");
       } else {
         throw new Error("Sign-up failed.");
       }
@@ -77,7 +77,7 @@ const SignUp = () => {
         {message && <p className={styles.errorMsg}>{message}</p>}
         <div className={styles.switchLink}>
           <span>Already have an account?</span>
-          <a href="/gogogo/loginn">Login</a>
+          <a href="/loginn">Login</a>
         </div>
       </div>
     </div>

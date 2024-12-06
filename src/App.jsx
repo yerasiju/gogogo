@@ -26,20 +26,17 @@ const App = () => {
   };
 
   return (
-    <Router basename="/gogogo">
+    <Router>
       <Navbar user={user} onLogout={handleLogout} />
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/gogogo/destinations" element={<Destinations />} />
-          <Route
-            path="/gogogo/destination/:id"
-            element={<DetailsOfDestination />}
-          />
-          <Route path="/gogogo/planner" element={<Planner />} />
-          <Route path="/gogogo/about" element={<About />} />
-          <Route path="/gogogo/loginn" element={<Login setUser={setUser} />} />
-          <Route path="/gogogo/signup" element={<SignUp />} />
+          <Route path="/destinations" element={<Destinations />} />
+          <Route path="/destination/:id" element={<DetailsOfDestination />} />
+          <Route path="/planner" element={<Planner />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/loginn" element={<Login setUser={setUser} />} />
+          <Route path="/signup" element={<SignUp />} />
         </Routes>
       </div>
       <Footer />

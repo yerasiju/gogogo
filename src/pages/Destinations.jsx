@@ -18,6 +18,9 @@ const Destinations = () => {
     <div className={styles.pageWrapper}>
       <header className={styles.hero}>
         <h1 className={styles.title}>Where to Go Next?</h1>
+        <h3 className={styles.title}>
+          Our top destinations of this season !!!
+        </h3>
         <p className={styles.subtitle}>
           Explore breathtaking destinations worldwide and plan your next
           adventure.
